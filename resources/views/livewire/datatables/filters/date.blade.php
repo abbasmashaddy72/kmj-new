@@ -1,7 +1,9 @@
 <div x-data class="flex flex-col p-1 mb-2">
     <div class="relative flex w-full">
-        <x-form-input x-ref="start" wire:change="doDateFilterStart('{{ $index }}', $event.target.value)"
-            type="date" name="name" />
+        <x-form-input
+            class="block w-full px-2 py-1 m-1 text-sm font-normal bg-white border rounded outline-none focus:border-blue-500 focus:shadow"
+            x-ref="start" wire:change="doDateFilterStart('{{ $index }}', $event.target.value)" type="date"
+            name="name" />
         <div class="absolute inset-y-0 right-0 flex items-center pr-2">
             <button x-on:click="$refs.start.value=''" wire:click="doDateFilterStart('{{ $index }}', '')"
                 class="-mb-0.5 pr-1 flex text-gray-400 hover:text-red-600 focus:outline-none" tabindex="-1">
@@ -10,8 +12,11 @@
         </div>
     </div>
     <div class="relative flex items-center w-full">
-        <x-form-input x-ref="end" wire:change="doDateFilterEnd('{{ $index }}', $event.target.value)" type="date"
+        <x-form-input
+            class="block w-full px-2 py-1 m-1 text-sm font-normal bg-white border rounded outline-none focus:border-blue-500 focus:shadow"
+            x-ref="end" wire:change="doDateFilterEnd('{{ $index }}', $event.target.value)" type="date"
             name="name" />
+
         <div class="absolute inset-y-0 right-0 flex items-center pr-2">
             <button x-on:click="$refs.end.value=''" wire:click="doDateFilterEnd('{{ $index }}', '')"
                 class="-mb-0.5 pr-1 flex text-gray-400 hover:text-red-600 focus:outline-none" tabindex="-1">

@@ -1,6 +1,7 @@
 <div x-data class="flex flex-col p-1 mb-2">
     <div class="relative flex w-full">
         <x-form-input x-ref="start" type="time" name="name"
+            class="block w-full px-2 py-1 m-1 text-sm font-normal bg-white border rounded outline-none focus:border-blue-500 focus:shadow"
             wire:change="doTimeFilterStart('{{ $index }}', $event.target.value)"
             x-on:change="$refs.input.value = ''" />
         <div class="absolute inset-y-0 right-0 flex items-center pr-2">
@@ -12,6 +13,7 @@
     </div>
     <div class="relative flex w-full">
         <x-form-input x-ref="end" type="time" name="name"
+            class="block w-full px-2 py-1 m-1 text-sm font-normal bg-white border rounded outline-none focus:border-blue-500 focus:shadow"
             wire:change="doTimeFilterEnd('{{ $index }}', $event.target.value)"
             x-on:change="$refs.input.value = ''" />
         <div class="absolute inset-y-0 right-0 flex items-center pr-2">
