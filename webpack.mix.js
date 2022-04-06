@@ -1,5 +1,5 @@
-const mix = require('laravel-mix')
-const tailwindcss = require('tailwindcss')
+const mix = require("laravel-mix");
+const tailwindcss = require("tailwindcss");
 
 /*
  |--------------------------------------------------------------------------
@@ -12,21 +12,21 @@ const tailwindcss = require('tailwindcss')
  |
  */
 
-mix.js('resources/js/frontend/app.js', 'public/js/frontend')
-    .postCss('resources/css/frontend/app.css', 'public/css/frontend', {}, [
-        tailwindcss('./tailwind-frontend.config.js')
+mix.js("resources/js/frontend/app.js", "public/js/frontend")
+    .sass("resources/css/frontend/app.scss", "public/css/frontend", {}, [
+        tailwindcss("./tailwind-frontend.config.js"),
     ])
     .options({
-        processCssUrls: false
-    })
+        processCssUrls: false,
+    });
 
-mix.js('resources/js/backend/app.js', 'public/js/backend')
-    .js('resources/js/backend/hope-ui.js', 'public/js/backend')
-    .postCss('resources/css/backend/app.css', 'public/css/backend', {}, [
-        tailwindcss('./tailwind-backend.config.js')
+mix.js("resources/js/backend/app.js", "public/js/backend")
+    .js("resources/js/backend/hope-ui.js", "public/js/backend")
+    .postCss("resources/css/backend/app.css", "public/css/backend", {}, [
+        tailwindcss("./tailwind-backend.config.js"),
     ])
     .options({
-        processCssUrls: false
-    })
+        processCssUrls: false,
+    });
 
-mix.browserSync('127.0.0.1:8000')
+mix.browserSync("127.0.0.1:8000");

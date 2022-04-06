@@ -1088,16 +1088,16 @@ textarea {
 */
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
-  color: #ced4da; /* 2 */
+  color: #A2A2A8; /* 2 */
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1; /* 1 */
-  color: #ced4da; /* 2 */
+  color: #A2A2A8; /* 2 */
 }
 input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
-  color: #ced4da; /* 2 */
+  color: #A2A2A8; /* 2 */
 }
 /*
 Set the default cursor for buttons.
@@ -1595,6 +1595,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-full{
   max-width: 100%;
 }
+.max-w-7xl{
+  max-width: 80rem;
+}
 .flex-auto{
   flex: 1 1 auto;
 }
@@ -1665,6 +1668,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-between{
   justify-content: space-between;
+}
+.justify-around{
+  justify-content: space-around;
 }
 .gap-2{
   gap: 0.5rem;
@@ -1989,6 +1995,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 .pb-8{
   padding-bottom: 2rem;
 }
@@ -2179,6 +2189,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(216 221 250 / var(--tw-text-opacity));
 }
+.text-teal-600{
+  --tw-text-opacity: 1;
+  color: rgb(26 161 121 / var(--tw-text-opacity));
+}
+.text-amber-500{
+  --tw-text-opacity: 1;
+  color: rgb(245 158 11 / var(--tw-text-opacity));
+}
 .opacity-0{
   opacity: 0;
 }
@@ -2309,6 +2327,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-blue-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(216 221 250 / var(--tw-bg-opacity));
+}
+.hover\:bg-teal-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 161 121 / var(--tw-bg-opacity));
 }
 .hover\:bg-opacity-20:hover{
   --tw-bg-opacity: 0.2;
@@ -2546,8 +2568,15 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
+  .sm\:rounded-lg{
+    border-radius: 0.5rem;
+  }
   .sm\:p-6{
     padding: 1.5rem;
+  }
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .sm\:text-sm{
     font-size: 0.875rem;
@@ -2587,6 +2616,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:py-0{
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 @media (min-width: 1280px){

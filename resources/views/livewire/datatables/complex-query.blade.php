@@ -38,7 +38,7 @@
                             }
                         }">
                             <input x-model="name" wire:loading.attr="disabled" x-on:keydown.enter="saveQuery" placeholder="save as..." class="flex-grow px-3 py-3 border text-sm text-gray-900 leading-4 block rounded-md border-gray-300 shadow-sm focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
-                            <button x-bind:disabled="! name" x-show="rules" x-on:click="saveQuery" class="flex items-center space-x-2 px-3 py-0.5 border border-green-400 disabled:border-gray-300 rounded-md bg-white text-green-500 disabled:text-gray-300 text-xs leading-4 font-medium uppercase tracking-wider hover:bg-green-200 disabled:hover:bg-white focus:outline-none disabled:pointer-events-none">
+                            <button x-bind:disabled="! name" x-show="rules" x-on:click="saveQuery" class="flex items-center space-x-2 px-3 py-0.5 border border-green-400 disabled:border-gray-300 rounded-md bg-white text-amber-500 disabled:text-gray-300 text-xs leading-4 font-medium uppercase tracking-wider hover:bg-green-200 disabled:hover:bg-white focus:outline-none disabled:pointer-events-none">
                                 <span>{{ __('Save') }}</span>
                                 <span wire:loading.remove><x-icons.check-circle class="m-2" /></span>
                                 <span wire:loading><x-icons.cog class="animate-spin m-2" /></span>

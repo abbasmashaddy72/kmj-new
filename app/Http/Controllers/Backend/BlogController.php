@@ -26,7 +26,9 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        $blog = null;
+
+        return view('pages.backend.blogs.cev', compact('blog'));
     }
 
     /**
@@ -48,7 +50,9 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        $blog = $blog->id;
+
+        return view('pages.backend.blogs.cev', compact('blog'));
     }
 
     /**
@@ -59,7 +63,9 @@ class BlogController extends Controller
      */
     public function edit(Blog $blog)
     {
-        //
+        $blog = $blog->id;
+
+        return view('pages.backend.blogs.cev', compact('blog'));
     }
 
     /**
