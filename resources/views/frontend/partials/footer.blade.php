@@ -1,22 +1,10 @@
-<footer class="relative" style="background-image: url('{{asset('images/bg22.png')}}')">
+<footer class="relative" style="background-image: url('{{asset('images/footer.jpg')}}')">
     <div class="bg-footer-image max-w-6xl mx-auto px-4 sm:px-6">
         <div class="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800 -mt-px">
-            <div class="pointer-events-none -z-1" aria-hidden="true"><svg
-                    class="absolute bottom-0 left-0 transform -translate-x-1/2 ml-24 dark:opacity-40" width="800"
-                    height="264" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="400" cy="400" r="400" fill="url(#footerglow_paint0_radial)" fill-opacity=".4" />
-                    <defs>
-                        <radialGradient id="footerglow_paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                            gradientTransform="rotate(90 0 400) scale(315.089)">
-                            <stop stop-color="#3ABAB4" />
-                            <stop offset="1" stop-color="#3ABAB4" stop-opacity=".01" />
-                        </radialGradient>
-                    </defs>
-                </svg></div>
             <div class="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
                 <div class="md:col-span-2 lg:col-span-3"><a class="inline-block" href="{{route('home')}}"
                         aria-label="Al Karbala"><a class="block" href="{{route('home')}}" aria-label="Al Karbala"><img
-                                src="{{asset('images/home/Al Karbala_green.png')}}" class="h-12 w-28" /></a></a></div>
+                                src="{{asset('images/logo-01.png')}}" class="h-12 w-28" /></a></a></div>
                 <div class="md:col-span-10 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="text-sm">
                         <h6 class="font-medium uppercase mb-2">Products</h6>
@@ -142,22 +130,4 @@
             </div>
         </div>
     </div>
-    <svg class="absolute top-0 right-0 transform translate-x-1/2 -mr-16 dark:opacity-40" width="800" height="502"
-        fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="400" cy="102" r="400" fill="url(#heroglow_paint0_radial)" fill-opacity=".6" />
-        <circle cx="209" cy="289" r="170" fill="url(#heroglow_paint1_radial)" fill-opacity=".4" />
-        <defs>
-            <radialGradient id="heroglow_paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                gradientTransform="rotate(90 149 251) scale(315.089)">
-                <stop stop-color="#3ABAB4" />
-                <stop offset="1" stop-color="#3ABAB4" stop-opacity=".01" />
-            </radialGradient>
-            <radialGradient id="heroglow_paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-                gradientTransform="rotate(90 -40 249) scale(133.913)">
-                <stop stop-color="#667EEA" />
-                <stop offset="1" stop-color="#667EEA" stop-opacity=".01" />
-            </radialGradient>
-        </defs>
-    </svg>
-
 </footer>

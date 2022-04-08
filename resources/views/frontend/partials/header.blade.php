@@ -91,7 +91,7 @@
                     x-transition:enter-end="opacity-100 translate-x-0"
                     x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100"
                     x-transition:leave-end="opacity-0" x-cloak>
-                    <div class="py-6 pr-4 pl-20"><img src="{{asset('images/home/Al Karbala_green.png')}}" class="h-12 w-28" />
+                    <div class="py-6 pr-4 pl-20"><img src="{{asset('images/logo-01.png')}}" class="h-12 w-28" />
                         <ul>
                             <li class="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800"><span
                                     class="flex text-gray-600 dark:text-gray-400 py-2">Company</span>

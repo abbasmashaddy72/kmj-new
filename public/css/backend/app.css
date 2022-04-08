@@ -1899,9 +1899,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(73 80 87 / var(--tw-bg-opacity));
 }
-.bg-gray-300{
+.bg-green-500{
   --tw-bg-opacity: 1;
-  background-color: rgb(222 226 230 / var(--tw-bg-opacity));
+  background-color: rgb(26 160 83 / var(--tw-bg-opacity));
 }
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
@@ -2038,6 +2038,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pr-1{
   padding-right: 0.25rem;
 }
+.pr-8{
+  padding-right: 2rem;
+}
 .text-left{
   text-align: left;
 }
@@ -2161,9 +2164,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(230 173 166 / var(--tw-text-opacity));
 }
-.text-green-500{
+.text-amber-500{
   --tw-text-opacity: 1;
-  color: rgb(26 160 83 / var(--tw-text-opacity));
+  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 .text-gray-400{
   --tw-text-opacity: 1;
@@ -2192,10 +2195,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-teal-600{
   --tw-text-opacity: 1;
   color: rgb(26 161 121 / var(--tw-text-opacity));
-}
-.text-amber-500{
-  --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
 }
 .opacity-0{
   opacity: 0;
