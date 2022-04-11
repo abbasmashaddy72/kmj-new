@@ -1,4 +1,5 @@
-<section>
+<section class="relative border-t border-gray-200 dark:border-gray-800"
+    style="background-image: url('{{ asset('images/supplication-bg.png') }}')">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="pb-12 md:pb-16">
 
@@ -42,7 +43,7 @@
                     data-aos-anchor="[data-aos-id-featposts]" data-aos-delay="100">
                     <figure>
                         <img class="absolute inset-0 w-full h-full object-cover transition duration-700 ease-out"
-                            src="{{ asset('images/adl.png') }}" width="258" height="154" alt="tauheed" />
+                            src="{{ asset('images/adl.jpg') }}" width="258" height="154" alt="tauheed" />
                         <div class="absolute inset-0 transition duration-700 ease-out" aria-hidden="true"></div>
                     </figure>
                     <div class="relative flex flex-col h-full text-white">
@@ -70,7 +71,7 @@
                     data-aos-anchor="[data-aos-id-featposts]" data-aos-delay="100">
                     <figure>
                         <img class="absolute inset-0 w-full h-full object-cover transition duration-700 ease-out"
-                            src="{{ asset('images/tauheed.jpg') }}" width="258" height="154" alt="tauheed" />
+                            src="{{ asset('images/nabuwat.jpg') }}" width="258" height="154" alt="tauheed" />
                         <div class="absolute inset-0 transition duration-700 ease-out" aria-hidden="true"></div>
                     </figure>
                     <div class="relative flex flex-col h-full text-white">
@@ -97,7 +98,7 @@
                     data-aos-anchor="[data-aos-id-featposts]" data-aos-delay="100">
                     <figure>
                         <img class="absolute inset-0 w-full h-full object-cover transition duration-700 ease-out"
-                            src="{{ asset('images/tauheed.jpg') }}" width="258" height="154" alt="tauheed" />
+                            src="{{ asset('images/imamat.jpg') }}" width="258" height="154" alt="tauheed" />
                         <div class="absolute inset-0 transition duration-700 ease-out" aria-hidden="true"></div>
                     </figure>
                     <div class="relative flex flex-col h-full text-white">
@@ -108,12 +109,8 @@
                                 </h3>
                         </header>
                         <div class="m-4 p-2 italic">
-                            There is only one God -
-                            Eternal, Self-sufficient; He
-                            has no beginning or end;
-                            He is Omnipotent, has
-                            power over everything and
-                            every affair;</div>
+                            To lead the people to the Straight Path, and to preserve the religion of Islam, Allah
+                            appointed twelve successors.</div>
                         <footer class="flex justify-center">
                             <button class="btn text-center bg-amber-600">Read More</button>
                         </footer>
@@ -125,7 +122,7 @@
                     data-aos-anchor="[data-aos-id-featposts]" data-aos-delay="100">
                     <figure>
                         <img class="absolute inset-0 w-full h-full object-cover transition duration-700 ease-out"
-                            src="{{ asset('images/tauheed.jpg') }}" width="258" height="154" alt="tauheed" />
+                            src="{{ asset('images/qayamat.jpg') }}" width="258" height="154" alt="tauheed" />
                         <div class="absolute inset-0 transition duration-700 ease-out" aria-hidden="true"></div>
                     </figure>
                     <div class="relative flex flex-col h-full text-white">

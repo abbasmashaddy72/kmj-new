@@ -5,6 +5,8 @@
 @include('frontend.partials.ym')
 @include('frontend.partials.hymns')
 @include('frontend.partials.usool')
+@include('frontend.partials.youth-kids')
+@include('frontend.partials.supplications')
 
 @endsection
 

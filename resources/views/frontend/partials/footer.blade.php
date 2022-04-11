@@ -1,10 +1,10 @@
-<footer class="relative" style="background-image: url('{{asset('images/footer.jpg')}}')">
+<footer class="relative" style="background-image: url('{{asset('images/hymns_bg.png')}}')">
     <div class="bg-footer-image max-w-6xl mx-auto px-4 sm:px-6">
         <div class="py-12 md:py-16 border-t border-gray-200 dark:border-gray-800 -mt-px">
             <div class="grid md:grid-cols-12 gap-8 lg:gap-20 mb-8 md:mb-12">
                 <div class="md:col-span-2 lg:col-span-3"><a class="inline-block" href="{{route('home')}}"
                         aria-label="Al Karbala"><a class="block" href="{{route('home')}}" aria-label="Al Karbala"><img
-                                src="{{asset('images/logo-01.png')}}" class="h-12 w-28" /></a></a></div>
+                                src="{{asset('images/logo-01.png')}}" class="h-24 w-28" /></a></a></div>
                 <div class="md:col-span-10 lg:col-span-9 grid grid-cols-2 md:grid-cols-4 gap-8">
                     <div class="text-sm">
                         <h6 class="font-medium uppercase mb-2">Products</h6>

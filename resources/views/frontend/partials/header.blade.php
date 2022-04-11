@@ -1,17 +1,20 @@
-<header class="fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out" x-data="{top : true}"
+<header class="fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out" x-data="{ top: true }"
     @scroll.window="top = window.pageYOffset > 10 ? false : true"
     :class="{'bg-white dark:bg-gray-800 backdrop-blur-sm shadow-lg' : !top}">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
         <div class="flex items-center justify-between h-20">
             <div class="shrink-0 mr-5"><a class="block" href="{{ route('home') }}"
-                    aria-label="Al Karbala Logo"><img src="{{asset('images/logo-01.png')}}" class="h-12 w-28" /></a></div>
+                    aria-label="Al Karbala Logo"><img src="{{ asset('images/logo-01.png') }}"
+                        class="h-24 w-28" /></a></div>
             <nav class="hidden md:flex md:grow">
                 <ul class="flex grow flex-wrap items-center font-medium">
+                    <li><a class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                            href="{{ route('about') }}">Karbala</a></li>
                     <li class="relative" x-data="{ open: false }" @mouseenter="open = true"
                         @mouseleave="open = false"><a
                             class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                             href="#0" aria-haspopup="true" :aria-expanded="open" @focus="open = true"
-                            @focusout="open = false" @click.prevent>Company <svg
+                            @focusout="open = false" @click.prevent>Aqaed <svg
                                 class="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 shrink-0"
                                 viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -24,21 +27,111 @@
                             x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100"
                             x-transition:leave-end="opacity-0" x-cloak>
                             <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
-                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">About</a>
+                                    href="{{ route('about') }}" @focus="open = true"
+                                    @focusout="open = false">Tauheed</a>
                             </li>
                             <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
-                                    href="{{route('about')}}" @focus="open = true" @focusout="open = false">about</a></li>
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">Adl</a>
+                            </li>
                             <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
-                                    href="{{ route('blog') }}" @focus="open = true" @focusout="open = false">Blog</a>
+                                    href="{{ route('blog') }}" @focus="open = true"
+                                    @focusout="open = false">Nabuwwat</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true"
+                                    @focusout="open = false">Imamat</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true"
+                                    @focusout="open = false">Qayamat</a>
                             </li>
                         </ul>
                     </li>
+                    <li class="relative" x-data="{ open: false }" @mouseenter="open = true"
+                        @mouseleave="open = false"><a
+                            class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                            href="#0" aria-haspopup="true" :aria-expanded="open" @focus="open = true"
+                            @focusout="open = false" @click.prevent>Imam Mehdi (ع) <svg
+                                class="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 shrink-0"
+                                viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
+                            </svg></a>
+                        <ul class="origin-top-right absolute top-full left-0 w-40 bg-white dark:bg-gray-800 shadow-lg py-2 ml-4 rounded"
+                            x-show="open" x-transition:enter="transition ease-out duration-200 transform"
+                            x-transition:enter-start="opacity-0 -translate-y-2"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" x-cloak>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">Who is
+                                    Imam Mahdi (ع)</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">Birth of
+                                    Imam Mahdi (ع)</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('blog') }}" @focus="open = true" @focusout="open = false">
+                                    Responsibilities towards Imam (ع)</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">
+                                    Occultation of Imam Mahdi (ع)</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true"
+                                    @focusout="open = false">Reappearance of Imam Mahdi (ع) </a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">
+                                    Helpers and Companions of
+                                    Imam Mahdi (ع)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="relative" x-data="{ open: false }" @mouseenter="open = true"
+                        @mouseleave="open = false"><a
+                            class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                            href="#0" aria-haspopup="true" :aria-expanded="open" @focus="open = true"
+                            @focusout="open = false" @click.prevent>Youth <svg
+                                class="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 shrink-0"
+                                viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z" />
+                            </svg></a>
+                        <ul class="origin-top-right absolute top-full left-0 w-40 bg-white dark:bg-gray-800 shadow-lg py-2 ml-4 rounded"
+                            x-show="open" x-transition:enter="transition ease-out duration-200 transform"
+                            x-transition:enter-start="opacity-0 -translate-y-2"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100"
+                            x-transition:leave-end="opacity-0" x-cloak>
+
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">
+                                    Basic Islamic Laws</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('blog') }}" @focus="open = true" @focusout="open = false">
+                                    Youth and Importance of Quran</a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">Hijab:
+                                    the Dress of Modesty in Islam </a>
+                            </li>
+                            <li><a class="text-sm text-gray-600 dark:text-gray-400 hover:text-amber-500 dark:hover:text-amber-500 flex py-2 px-4 leading-tight"
+                                    href="{{ route('about') }}" @focus="open = true" @focusout="open = false">
+                                    The Developing World and the Shia Youth</a>
+                            </li>
+                        </ul>
+                    </li>
+                    {{-- <li><a class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                            href="{{ route('about') }}">Yaad e Mehdi</a></li> --}}
                     <li><a class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                            href="{{ route('about') }}">abouts</a></li>
-                    <li><a class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                            href="{{route('about')}}">abouts</a></li>
+                            href="{{ route('about') }}">About</a></li>
                     <li><a class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
                             href="{{ route('contact') }}">Contact</a></li>
+
                 </ul>
                 <div class="form-switch flex flex-col justify-center ml-3"><input type="checkbox" name="light-switch"
                         id="light-switch-desktop" class="light-switch sr-only" /> <label class="relative"
@@ -91,23 +184,63 @@
                     x-transition:enter-end="opacity-100 translate-x-0"
                     x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100"
                     x-transition:leave-end="opacity-0" x-cloak>
-                    <div class="py-6 pr-4 pl-20"><img src="{{asset('images/logo-01.png')}}" class="h-12 w-28" />
+                    <div class="py-6 pr-4 pl-20"><img src="{{ asset('images/logo-01.png') }}"
+                            class="h-24 w-28" />
                         <ul>
+                            <li><a class="flex text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 py-2"
+                                    href="{{ route('about') }}">Karbala</a></li>
                             <li class="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800"><span
-                                    class="flex text-gray-600 dark:text-gray-400 py-2">Company</span>
+                                    class="flex text-gray-600 dark:text-gray-400 py-2">Aqaed</span>
                                 <ul class="pl-4">
                                     <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
-                                            href="{{ route('about') }}">About</a></li>
+                                            href="{{ route('about') }}">Tauheed</a></li>
                                     <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
-                                            href="{{route('about')}}">about</a></li>
+                                            href="{{ route('about') }}">Adl</a></li>
                                     <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
-                                            href="{{ route('blog') }}">Blog</a></li>
+                                            href="{{ route('blog') }}">Nabuwwat</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}">Imamat</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}">Qayamat</a></li>
+                                </ul>
+                            </li>
+                            <li class="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800"><span
+                                    class="flex text-gray-600 dark:text-gray-400 py-2">Imam Mahdi (ع)</span>
+                                <ul class="pl-4">
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('about') }}">Who is
+                                            Imam Mahdi (ع)</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('about') }}">Birth of
+                                            Imam Mahdi (ع)</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}"> Responsibilities towards Imam (ع)</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}">Occultation of Imam Mahdi (ع)</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}">Reappearance of Imam Mahdi (ع)</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}">Helpers and Companions of
+                                            Imam Mahdi (ع)</a></li>
+                                </ul>
+                            </li>
+                            <li class="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800"><span
+                                    class="flex text-gray-600 dark:text-gray-400 py-2">Youth</span>
+                                <ul class="pl-4">
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('about') }}">Basic Islamic Laws</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('about') }}">Youth and Importance of Quran</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}"> Hijab:
+                                            the Dress of Modesty in Islam</a></li>
+                                    <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
+                                            href="{{ route('blog') }}">The Developing World and the Shia Youth</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a class="flex text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 py-2"
-                                    href="{{ route('about') }}">abouts</a></li>
-                            <li><a class="flex text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 py-2"
-                                    href="{{route('about')}}">abouts</a></li>
+                                    href="{{ route('about') }}">About</a></li>
                             <li><a class="flex text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 py-2"
                                     href="{{ route('contact') }}">Contact</a></li>
                             <li><a class="font-medium w-full inline-flex items-center justify-center border border-transparent px-4 py-2 my-2 rounded text-white bg-amber-500 hover:bg-green-400 transition duration-150 ease-in-out"
