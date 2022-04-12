@@ -9,11 +9,11 @@
             <nav class="hidden md:flex md:grow">
                 <ul class="flex grow flex-wrap items-center font-medium">
                     <li><a class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                            href="{{ route('about') }}">Karbala</a></li>
+                            href="{{ route('karbala') }}">Karbala</a></li>
                     <li class="relative" x-data="{ open: false }" @mouseenter="open = true"
                         @mouseleave="open = false"><a
                             class="text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                            href="#0" aria-haspopup="true" :aria-expanded="open" @focus="open = true"
+                            href="{{ route('aqaed') }}" aria-haspopup="true" :aria-expanded="open" @focus="open = true"
                             @focusout="open = false" @click.prevent>Aqaed <svg
                                 class="w-3 h-3 fill-current text-gray-400 cursor-pointer ml-1 shrink-0"
                                 viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -188,9 +188,10 @@
                             class="h-24 w-28" />
                         <ul>
                             <li><a class="flex text-gray-600 hover:text-amber-500 dark:text-gray-300 dark:hover:text-amber-500 py-2"
-                                    href="{{ route('about') }}">Karbala</a></li>
-                            <li class="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800"><span
-                                    class="flex text-gray-600 dark:text-gray-400 py-2">Aqaed</span>
+                                    href="{{ route('karbala') }}">Karbala</a></li>
+                            <li class="py-2 my-2 border-t border-b border-gray-200 dark:border-gray-800"><a
+                                    href="{{ route('aqaed') }}"> <span
+                                        class="flex text-gray-600 dark:text-gray-400 py-2">Aqaed</span></a>
                                 <ul class="pl-4">
                                     <li><a class="text-sm flex font-medium text-gray-600 hover:text-amber-500 dark:text-gray-400 dark:hover:text-amber-500 py-2"
                                             href="{{ route('about') }}">Tauheed</a></li>

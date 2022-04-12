@@ -12,11 +12,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// Working Routes
 Route::get('/', function () {
     return view('frontend.home');
 })->name('home');
 
+Route::get('/karbala', function () {
+    return view('frontend.karbala');
+})->name('karbala');
+
+Route::get('/karbala-01', function () {
+    return view('frontend.partials.karbala.blogs.karbala-01');
+})->name('karbala-01');
+
+Route::get('/aqaed', function () {
+    return view('frontend.aqaed');
+})->name('aqaed');
+
+
+
+//Testing Routes
 Route::get('/contact', function () {
     return view('frontend.contact');
 })->name('contact');
